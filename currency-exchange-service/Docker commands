@@ -1,0 +1,19 @@
+docker images
+docker tag repository:tagcurent repository:tagnew
+docker pull repository:tag
+docker search repository    --> and check if it is official
+docker image history imageid
+docker image inspect imageid  --> check the image details
+docker image remove imageid
+
+docker container prune --> remove all stopped containers
+docker container stop containerid  -> graceful shutdown
+docker container kill containerid  -> force shutdown
+
+docker events -> check the events of the docker daemon
+docker top  -> check the processes running inside the container
+docker stats -> check the resource usage of the container
+docker system df -> check the disk usage of the container
+
+launching distributed tracing server zipkin
+docker run -d -p 9411:9411 openzipkin/zipkin:2.23
